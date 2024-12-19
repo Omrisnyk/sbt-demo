@@ -12,7 +12,7 @@ permissions:
 
 jobs:
  
-  build app:
+  Build app:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@ab086b50c947c9774b70f39fc7f6e20ca2706c91
 
-  security:
+  Security:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
